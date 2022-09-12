@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Cute+Font&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: coral;
+    margin: 0;
+    font-family: 'Cute Font', cursive;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.header{
+    margin-top: 10px;
+}
+
+.container{
+    border: 1px solid rgb(7, 27, 176);
+    display: flex;
+    /* flex-wrap: wrap;
+     */
+     background-color: #53119E;
+     flex-direction: column;
+     padding: 20px;
+     flex-wrap: wrap;
+     border-radius: 15px;
+}
+.images, .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.dogArea, .catArea{
+    background-color: #fff;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.dogArea img, .catArea img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+#btnDog, #btnCat{
+    margin: 10px;
+    padding: 2px 12px;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-color: #114D99;
+}
+#btnDog:hover, #btnCat:hover{
+    background-color: #EA9306;
+    transform: scale(1.2);
+}
+#btnDog:active, #btnCat:active{
+    transform: scale(0.9);
+}
+@media screen and (max-width: 590px){
+    .header{
+        font-size: 20px;
+    }
+}
